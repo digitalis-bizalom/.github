@@ -184,6 +184,8 @@ Az `alapok` konkrét követelményeinél a cél az egységes, ellenőrizhető sz
 Alapértelmezett mezők:
 
 ```text
+ID
+ÁLLÍTÁS
 KÖVETELMÉNY
 EVIDENCIA
 MÉRCE
