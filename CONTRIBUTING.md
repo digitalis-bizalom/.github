@@ -13,7 +13,7 @@ A közös munka alapelve:
 ```text
 állítás
 -> indoklás
--> evidencia
+-> bizonyíték
 -> mérce
 -> teszt
 ```
@@ -22,7 +22,7 @@ A hozzájárulás akkor a leghasznosabb, ha világos, hogy:
 
 - mit állít vagy változtat;
 - miért szükséges;
-- milyen forrás vagy evidencia támasztja alá, ha tényállításról van szó;
+- milyen forrás vagy bizonyíték támasztja alá, ha tényállításról van szó;
 - milyen következménye lenne az elfogadásának;
 - és hol van a megfelelő helye a repository-struktúrában.
 
@@ -37,7 +37,7 @@ manifesto/
     rövid, nyilvánosan vállalható szakmai minimum
 
 alapok/
-    részletes követelmények, evidenciák,
+    részletes követelmények, bizonyítékok,
     mércék, tesztek és módszertan
 ```
 
@@ -157,7 +157,7 @@ normative requirement
 != factual diagnosis
 ```
 
-Ha egy állítás vitatott vagy bizonytalan, ezt a szövegben vagy a kapcsolódó evidenciában jelezni kell.
+Ha egy állítás vitatott vagy bizonytalan, ezt a szövegben vagy a kapcsolódó bizonyítékban jelezni kell.
 
 ## 8. Követelmény és implementáció
 
@@ -187,7 +187,7 @@ Alapértelmezett mezők:
 ID
 ÁLLÍTÁS
 KÖVETELMÉNY
-EVIDENCIA
+BIZONYÍTÉK
 MÉRCE
 TESZT
 FAILURE CONDITION
@@ -257,12 +257,12 @@ Ha ilyen tartalom véletlenül commitba kerül, azt azonnal jelezni kell egy org
 
 A szakmai vita a projekt normális működésének része.
 
-Egy javaslat elutasítása vagy módosítása lehetőleg az állításra, evidenciára, mércére, tesztre vagy governance-következményre hivatkozzon, ne a hozzájáruló személyére.
+Egy javaslat elutasítása vagy módosítása lehetőleg az állításra, bizonyítékra, mércére, tesztre vagy governance-következményre hivatkozzon, ne a hozzájáruló személyére.
 
 Ha nincs konszenzus, a vitatott kérdés:
 
 - nyitva maradhat;
-- visszakerülhet további evidenciagyűjtésre;
+- visszakerülhet további bizonyítékgyűjtésre;
 - több alternatív javaslatra bontható;
 - vagy elutasítható.
 
