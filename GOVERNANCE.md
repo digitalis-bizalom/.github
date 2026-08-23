@@ -47,7 +47,7 @@ manifesto
     = rövid, nyilvánosan vállalható szakmai minimum
 
 alapok
-    = követelmények, evidenciák, mércék és tesztek
+    = követelmények, bizonyítékok, mércék és tesztek
 ```
 
 Az organization és repositoryjai:
