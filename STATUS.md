@@ -6,10 +6,12 @@ Nem helyettesíti a Manifesztót vagy az `Alapok` követelményeit, és nem teki
 
 ## Aktuális munkabázis
 
-A projekt jelenlegi két fő munkadokumentuma:
+A projekt jelenlegi két fő nyilvános szakmai alapja:
 
-- `digitalis-bizalom/manifesto/manifesto.md` — **A digitális bizalom 12 pontja — Manifesztó a megbízható digitális államról**
-- `digitalis-bizalom/alapok/elso-kovetelmenykeszlet.md` — az `Alapok` első, tíz rekordos tényleges követelménykészlete
+- [`digitalis-bizalom/manifesto/manifesto.md`](https://github.com/digitalis-bizalom/manifesto/blob/v1.0/manifesto.md) — **A digitális bizalom 12 pontja — Manifesztó a megbízható digitális államról**, a közzétett **v1.0** változat. A kiadási oldal: [`v1.0`](https://github.com/digitalis-bizalom/manifesto/releases/tag/v1.0).
+- [`digitalis-bizalom/alapok/elso-kovetelmenykeszlet.md`](https://github.com/digitalis-bizalom/alapok/blob/main/elso-kovetelmenykeszlet.md) — az `Alapok` első, tíz rekordos, továbbra is felülvizsgálható követelménykészlete.
+
+A Manifesztó v1.0 közzétett szövege rögzített kiadási alap; a későbbi szakmai vita vagy a `main` ág módosítása nem változtatja meg visszamenőleg a v1.0 tartalmát. Az `Alapok` ehhez képest továbbfejleszthető, nem lezárt követelményrendszer.
 
 A két dokumentum egymást ellenőrzi:
 
@@ -29,7 +31,9 @@ A cél nem az, hogy a Manifesztó minden részletet tartalmazzon. A Manifesztó 
 
 ## Hol tartunk?
 
-A Manifesztó és az első követelménykészlet első belső, kétirányú back-testje megtörtént.
+A Manifesztó v1.0 nyilvánosságra került. A közzététel a Manifesztó adott verziójának állapotát rögzíti, nem tanúsítja az `Alapok` követelményrendszerének teljességét, és nem jelenti az online aláírásgyűjtés élesítését.
+
+A Manifesztó és az első követelménykészlet első belső, kétirányú back-testje korábban megtörtént.
 
 A munka során több olyan pontosítás született, amely nem egyszerű szerkesztési javítás volt, hanem a követelményekre bontásból vált láthatóvá. Ilyen volt többek között:
 
@@ -43,27 +47,27 @@ A munka során több olyan pontosítás született, amely nem egyszerű szerkesz
 
 Ez fontos eredmény, de nem teljességi bizonyíték. A jelenlegi tíz követelmény szándékosan keresztmetszeti tesztkészlet, nem a teljes követelményrendszer és nem a „tíz legfontosabb” követelmény.
 
-## Mi nincs még lezárva?
+## Mely követelményeket kell még operacionalizálni és vizsgálni?
 
-A Manifesztóban jelenleg is láthatóan nyitott kérdések:
+A Manifesztó v1.0 a következő négy kérdésben **már kifejezett elveket rögzít**. Ezek nem a közzétett szöveg azonosított hiányai. Nyitott viszont, hogyan fordíthatók le ellenőrizhető, falszifikálható `Alapok`-követelményekre, milyen bizonyítékokkal teljesíthetők, és milyen ellenpéldák tárhatják fel a megfogalmazásuk korlátait.
 
-1. **Támadói képességkorlát.**  
-   A pontos kérdés az, hogyan lehet közérthetően kimondani: ha egy kritikus biztonsági állítás valamely feltételezett támadói képességkorláttól függ, ennek a korlátnak is megfelelően alátámasztottnak kell lennie.
+1. **Támadói képességfeltételezés — 3. pont.**  
+   A v1.0 már kimondja, hogy nem elég a támadót lassabbnak vagy kevésbé intelligensnek feltételezni, és a kritikus biztonsági feltételezéseket alá kell támasztani. Az `Alapok` feladata ennek ellenőrzési módját tisztázni: mely feltevések nélkülözhetetlenek az adott biztonsági állításhoz, milyen bizonyíték támasztja alá őket, és mi történik, ha nem teljesülnek.
 
-2. **Tartós fenyegetettség és rendkívüli működés.**  
-   Nyitott, hogy a Manifesztóban külön is szerepeljen-e az az elv, hogy a tartós fenyegetettség önmagában nem igazolja automatikusan a tartós rendkívüli állami működést.
+2. **Tartós fenyegetettség és rendkívüli működés — 5. pont.**  
+   A v1.0 már megköveteli a rendkívüli állami működés szükségességének, arányosságának és jogalapjának rendszeres felülvizsgálatát, valamint a normál, jogszerű állapotba való visszatérést. Nyitott operacionalizálási kérdés, ki, mikor, milyen bizonyíték alapján ellenőriz, milyen korlátok érvényesülnek, és milyen feltételek mellett történhet újraindítás vagy visszaállás.
 
-3. **Élethelyzet / szolgáltatási nézőpont.**  
-   Nyitott, hogy a Manifesztó főszövegének része legyen-e az az elv, hogy az állammal kapcsolatba kerülő embernek vagy szervezetnek ne az állam szervezeti térképét kelljen ismernie ahhoz, hogy jogát gyakorolja, kötelezettségét teljesítse vagy ügyét elintézze.
+3. **Élethelyzet-alapú szolgáltatási nézőpont — 1. pont.**  
+   A v1.0 már előírja, hogy az állami szolgáltatások kiindulópontja az ember vagy szervezet élethelyzete legyen, és az ügyintézéshez ne kelljen ismerni az állam szervezeti térképét. Az `Alapok`-ban azt kell vizsgálni, hogyan mérhető a tényleges felhasználói hozzáférhetőség úgy, hogy közben megmaradjon a hatásköri és felelősségi rend rekonstruálhatósága.
 
-Ettől külön, az `Alapok` következő körének kiemelt kérdése:
+4. **A kritikus képesség fölötti tényleges kontroll — 12. pont, összefüggésben a 6. ponttal.**  
+   A v1.0 már megköveteli a tényleges kontrollt az alkotmányos hatásköri és felelősségi rend szerint, miközben nem teszi kötelezővé a teljes állami önellátást vagy a hazai tulajdont. Az `Alapok` feladata meghatározni az ellenőrizhető minimális képességeket, döntési és kilépési lehetőségeket, illetve a beszállítói függőség mellett is fennmaradó működési kontrollt.
 
-4. **Mit jelent a kritikus képesség fölötti „tényleges kontroll”?**  
-   Olyan operacionalizálás kell, amely megmutatja, milyen minimális állami képességeket szükséges megtartani, de nem vezet automatikusan tulajdonosi, hazai beszállítói vagy általános insourcing-kötelezettséghez.
+Egy későbbi Manifesztó-módosítás **nem előfeltétele** e kérdések részletesebb kidolgozásának. Új verzió szükségessége csak akkor merülhet fel külön döntésként, ha a szakmai tesztek valódi szövegszintű hiányt, ellentmondást vagy nem szándékolt normatív következményt mutatnak ki.
 
 ## Mit kérünk most a szakmai review-tól?
 
-A következő kör célja nem általános egyetértés vagy támogatás megszerzése, és még nem aláírásgyűjtés.
+A következő szakmai review célja nem általános egyetértés vagy támogatás megszerzése. A Manifesztóhoz történő csatlakozás ettől külön folyamat; az online aláírásgyűjtés megnyitása önálló üzemeltetési és adatkezelési feltételektől, valamint külön élesítési döntéstől függ.
 
 Kifejezetten **falszifikációt** kérünk.
 
@@ -191,7 +195,7 @@ A konkrét BIZONYÍTÉK külön biztonsági és publikációs felülvizsgálat t
 
 ## Szerzőség és közreműködés
 
-A jelenlegi dokumentumok munkaváltozatok.
+A Manifesztó v1.0 közzétett, rögzített szöveg; az `Alapok` első követelménykészlete és a jelen státuszdokumentum továbbra is felülvizsgálható munkadokumentumok.
 
 A forrásként vagy szakmai előzményként megnevezett személy nem válik ettől automatikusan a követelmény szerzőjévé, támogatójává vagy jóváhagyójává.
 
@@ -201,10 +205,10 @@ A Manifesztó szerzői, közreműködői, forrásai és későbbi aláírói kü
 
 ## Következő kapu
 
-A jelenlegi cél:
+A v1.0 közzététele utáni szakmai munkafolyamat:
 
 ```text
-current working pair
+publikált Manifesztó v1.0 + első Alapok-követelménykészlet
     ->
 heterogén szakmai falszifikáció
     ->
@@ -214,9 +218,9 @@ Alapok revision
     ->
 Manifesztó delta check
     ->
-public-freeze candidate
+csak szükség esetén: külön döntés egy későbbi Manifesztó-verzióról
 ```
 
-A projekt ezen a ponton még nem állítja, hogy a követelményrendszer teljes, és nem kér végleges szakmai vagy politikai jóváhagyást.
+A Manifesztó v1.0 publikálása nem jelent követelményteljességi vagy műszaki tanúsítást. A következő szakmai előrelépés feltétele, hogy a követelmények valós kritikával és legalább néhány konkrét alkalmazási próbával is szembesüljenek.
 
-A következő előrelépés feltétele az, hogy a jelenlegi állítások és követelmények valós szakmai kritikával és legalább néhány konkrét alkalmazási próbával is szembesüljenek.
+Az online aláírási nyilvántartás élesítése ettől elkülönülő feladat. A csatlakozás aktuális állapotát és módját a [`manifesto/CSATLAKOZAS.md`](https://github.com/digitalis-bizalom/manifesto/blob/main/CSATLAKOZAS.md) tartalmazza; a Manifesztó kiadása önmagában nem jelenti, hogy az online aláírás már elérhető.
