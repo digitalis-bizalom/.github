@@ -109,28 +109,28 @@ A szerzői státusz a konkrét dokumentumhoz kapcsolódik, és nem következik a
 
 ### 3.5 Signatory
 
-Signatory az, aki egy meghatározott Manifesto-verzió nyilvános állításait kifejezetten, saját nevével vállalja.
+Signatory az, aki a Manifesztó egy pontosan azonosított, rögzített verziójának nyilvános állításait kifejezetten vállalja, és akinek ezt a vállalását az adott verzióhoz kötött, dokumentált eljárásban nyilvántartásba vették.
 
-A signatory státusz mindig explicit és verzióspecifikus.
+A signatory státusz mindig explicit és verzióspecifikus. Nem következik automatikusan szerzőségből, repository-jogosultságból, contributionből, pull requestből, issue-ból vagy kommentből.
 
 ```text
 author
 != signatory
 signatory
 != owner
+contribution
+!= signature
 ```
 
-A signatory státuszt a `manifesto/SIGNATORIES.md` módosítására irányuló pull request rögzíti.
+Az aláírás és annak nyilvános megjelenítése külön kérdés. A rendes online eljárásban az e-mail-cím feletti rendelkezés igazolása nem azonos a polgári személyazonosság igazolásával. A kérelem benyújtása és az e-mail-megerősítés önmagában nem jelent jóváhagyott vagy nyilvánosan közzétehető aláírást.
 
-A pull request csak dokumentálja a vállalást; önmagában nem helyettesíti az érintett explicit beleegyezését a pontos Manifesto-verzióhoz.
+A nyilvános aláírói nyilvántartásba csak az adott Manifesztó-verzióhoz kötött, megfelelően ellenőrzött és jóváhagyott, aktuálisan érvényes, vissza nem vont vállalásból származó, külön engedélyezett adatok kerülhetnek. A név és más adatok nyilvános megjelenítése nem következik automatikusan az aláírás tényéből.
 
-Az explicit beleegyezés történhet például:
+Az aláírói állapot helyesbítése, felülvizsgálata és a vállalás visszavonása külön, megfelelően ellenőrzött eljárásban történik. A visszavont vagy a közzététel feltételeit már nem teljesítő rekord nem szerepelhet az aktuális nyilvános aláírói listában. A nem nyilvános bizonyítékok és eseményrekordok kezelésére az alkalmazandó adatkezelési, megőrzési és törlési szabályok vonatkoznak.
 
-- az érintett saját pull requestjével;
-- GitHub issue- vagy pull-request-kommentben;
-- más dokumentált kommunikációs csatornán.
+A v1.0 szerzőinek első aláírói státusza külön, dokumentált és explicit vállaláson alapul; nem feltételezi, hogy az általános online aláírási folyamaton mentek keresztül.
 
-Ha a beleegyezés nem GitHubon történik, a megfelelő pull requestet egy owner vagy contributor készítheti el, a consent tényének rögzítésével.
+A csatlakozás aktuális módját a `manifesto/CSATLAKOZAS.md` ismerteti. Az aláíráshoz nem szükséges GitHub-fiók vagy pull request. A GitHubon tett hozzájárulás vagy véleménynyilvánítás önmagában nem aláírás.
 
 ## 4. Szerzőség és endorsement
 
